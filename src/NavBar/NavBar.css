@@ -1,4 +1,5 @@
 .NavBar-main {
+    position: fixed;
     width: 100vw;
     padding-top: 5vh;
     display: grid;
@@ -7,12 +8,13 @@
 }
 
 .links-div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-evenly;
 }
+
 .socials-div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 h1 {
