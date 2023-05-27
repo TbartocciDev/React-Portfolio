@@ -1,13 +1,19 @@
 .AboutPage-main {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     background-color: rebeccapurple;
 }
 
 .learn-about-me-btn {
     border-style: solid;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    border-style: solid;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }

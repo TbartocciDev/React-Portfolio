@@ -1,13 +1,22 @@
 import "./NavBar.css"
 
 export default function NavBar() {
+    const sections = ["About","Apps","Skills","Contact"]
+
+    function scrollToSection(evt) {
+        const section = document.getElementById(evt.target.innerHTML);
+        section.scrollIntoView({behavior: 'smooth'});
+    }
+
     return (
         <main className="NavBar-main">
             <div className="links-div">
-                <h2>About</h2>
-                <h2>Portfolio</h2>
-                <h2>Skills</h2>
-                <h2>Contact</h2>
+                {sections.map((s) => (
+                    <button 
+                        onClick={scrollToSection}
+                        className="section-link"
+                    ><h2>{s}</h2></button>
+                ))}
             </div>
             <h1>Tommy Bartocci</h1>
             <div className="socials-div">

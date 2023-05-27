@@ -5,11 +5,21 @@
     display: grid;
     align-items: baseline;
     grid-template-columns: repeat(3, 1fr);
+    background-color: white;
 }
-
 .links-div {
     display: flex;
     justify-content: space-evenly;
+}
+.section-link {
+    background-color: transparent;
+    border-style: none;
+}
+#selected-section {
+    text-decoration: underline;
+}
+.section-link:hover {
+    cursor: pointer;
 }
 
 .socials-div {
