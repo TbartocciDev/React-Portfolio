@@ -1,18 +1,33 @@
 import './App.css';
+// frameworks
+import { useState } from 'react';
+// Components
 import NavBar from './NavBar/NavBar.jsx';
 import AboutPage from './Pages/AboutPage/AboutPage.jsx';
 import AppsPage from './Pages/AppsPage/AppsPage';
 import SkillsPage from './Pages/SkillsPage/SkillsPage.jsx';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import Footer from './Footer/Footer.jsx';
+// Data
+import { Data } from './Data';
+
 
 function App() {
+  window.onload = function() {
+    const navBar = document.querySelector('.NavBar-main')
+    const navBarHeight = navBar.offsetHeight
+    const contentViews = document.querySelectorAll('.content')
+    contentViews.forEach(function(view) {
+      view.style.marginTop = navBarHeight+"px"
+    })
+  }
+
   return (
     <div className="App">
       <NavBar />
       <AboutPage />
       <AppsPage />
-      <SkillsPage />
+      <SkillsPage skills={Data.skills}/>
       <ContactPage />
       <Footer />
     </div>

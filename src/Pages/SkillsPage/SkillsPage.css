@@ -3,3 +3,18 @@
     display: flex;
     background-color: red;
 }
+.SkillsPage-main .content {
+    display: flex;
+    justify-content: start;
+}
+
+.skills-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2vh;
+}
+
+.skills-div img {
+    border-style: solid;
+}
