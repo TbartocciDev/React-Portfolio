@@ -1,8 +1,9 @@
 import './App.css';
 // frameworks
-import { useState } from 'react';
+// import { useState } from 'react';
 // Components
 import NavBar from './NavBar/NavBar.jsx';
+import HomePage from './Pages/HomePage/HomePage';
 import AboutPage from './Pages/AboutPage/AboutPage.jsx';
 import AppsPage from './Pages/AppsPage/AppsPage';
 import SkillsPage from './Pages/SkillsPage/SkillsPage.jsx';
@@ -17,17 +18,19 @@ function App() {
     const navBar = document.querySelector('.NavBar-main')
     const navBarHeight = navBar.offsetHeight
     const contentViews = document.querySelectorAll('.content')
-    contentViews.forEach(function(view) {
+    contentViews.forEach(function(view, c) {
       view.style.marginTop = navBarHeight+"px"
+      console.log("test")
     })
   }
 
   return (
     <div className="App">
       <NavBar />
-      <AboutPage />
+      <HomePage data={Data.home}/>
+      <AboutPage data={Data.about}/>
       <AppsPage />
-      <SkillsPage skills={Data.skills}/>
+      <SkillsPage data={Data.skills}/>
       <ContactPage />
       <Footer />
     </div>

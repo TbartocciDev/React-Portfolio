@@ -1,4 +1,8 @@
 .skill-card {
     width: 100%;
-    border-style: solid;
+    /* border-style: solid; */
+}
+
+.skill-card img {
+    /* border-style: solid; */
 }

@@ -1,11 +1,12 @@
 import "./AboutPage.css"
 
-export default function AboutPage() {
+export default function AboutPage({ data }) {
     return (
         <main className="AboutPage-main" id="About">
             <div className="content">
-                <div className="intro-bio">A New York based developer</div>
-                <button className="learn-about-me-btn">Learn more about me!</button>
+                <div className="intro-bio">
+                    <h2>{data.header}</h2>
+                </div>
             </div>
         </main>
     )

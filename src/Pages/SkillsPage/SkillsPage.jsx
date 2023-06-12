@@ -1,15 +1,17 @@
 import "./SkillsPage.css"
 import SkillsCard from "./Components/SkillCard"
 
-export default function SkillsPage({ skills }) {
+export default function SkillsPage({ data }) {
     return (
         <main className="SkillsPage-main" id="Skills">
             <div className="content">
-                <div className="section-header">Skills & Tools</div>
-                <div className="section-subheader">Here are some skills, tools, and technologies I use to make ideas reality:</div>
+                <h1>{data.header}</h1>
+                <h2>{data.subheader}</h2>
+                <div className="section-header"></div>
+                <div className="section-subheader"></div>
                 <div className="skills-div">
-                    {skills.list.map((s) => (
-                        <SkillsCard skill={s}/>
+                    {data.list.map((s, key) => (
+                        <SkillsCard skill={s} key={key}/>
                     ))}
                 </div>
             </div>

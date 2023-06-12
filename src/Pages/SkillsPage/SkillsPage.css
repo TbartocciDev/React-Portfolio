@@ -1,20 +1,31 @@
 .SkillsPage-main {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    background-color: red;
+    background-color: #add8e6;
+    color: rgb(91, 91, 91);
+}
+.SkillsPage-main h1 {
+    padding-top: 4vh;
+}
+.SkillsPage-main h2 {
+    padding-top: 2vh;
 }
 .SkillsPage-main .content {
     display: flex;
     justify-content: start;
+    flex-direction: column;
+    border-style: none;
+    text-align: left;
+    align-items: start;
+    /* border-style: solid; */
 }
 
 .skills-div {
+    padding-top: 4vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    height: 100%;
     gap: 2vh;
-}
-
-.skills-div img {
-    border-style: solid;
+    text-align: center;
 }

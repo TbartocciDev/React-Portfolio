@@ -1,32 +1,36 @@
+/* Web Dev */
 .NavBar-main {
     position: fixed;
-    width: 100vw;
-    padding-top: 5vh;
-    display: grid;
-    align-items: baseline;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: white;
-}
-.links-div {
+    height: 10vmin;
     display: flex;
-    justify-content: space-evenly;
-}
-.section-link {
-    background-color: transparent;
-    border-style: none;
-}
-#selected-section {
-    text-decoration: underline;
-}
-.section-link:hover {
-    cursor: pointer;
+    width: 100%;
+    align-items: end;
+    background-color: rebeccapurple;
 }
 
-.socials-div {
-    display: flex;
-    justify-content: space-evenly;
+.NavBar-main div {
+    margin-left: auto;
+}
+.NavBar-hamburger-view {
+    display: none;
 }
 
-h1 {
-    text-align: center;
+/* Mobile Dev */
+@media (max-width: 800px) {
+    /* .NavBar-main {
+        height: 10vh;
+        display: flex;
+        width: 100%;
+    }
+    
+    .NavBar-hamburger-view {
+        display: flex;
+        background-color: red;
+        height: 10vh;
+        aspect-ratio: 1/1;
+    }
+
+    .links-div {
+        display: none;
+    } */
 }

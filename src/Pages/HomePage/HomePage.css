@@ -1,7 +1,7 @@
-.AboutPage-main {
+.HomePage-main {
     height: 100vh;
     display: flex;
-    background-color: rgb(211, 183, 239);
+    background-color: rgb(56, 186, 64);
 }
 
 .learn-about-me-btn {
