@@ -11,8 +11,10 @@ const Data = {
         ]
     },
     about: {
-        header: "About",
-        brandStatement: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        header: "About Me",
+        brandStatement: `Software Developer with school and self-taught education. Skilled in both iOS and web development. 
+        Possess exceptional problem-solving skills and industry standard programming knowledge. Capable of building from the 
+        ground up, or enhancing already built projects.`
     },
     apps: {
 

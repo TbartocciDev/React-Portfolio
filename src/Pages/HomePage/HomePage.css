@@ -1,7 +1,10 @@
 .HomePage-main {
     height: 100vh;
     display: flex;
-    background-color: rgb(56, 186, 64);
+    background-color: rgb(120, 120, 120);
+    /* background-image: url("/public/sc1.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .learn-about-me-btn {

@@ -1,22 +1,69 @@
+:root {
+    --accent: #DB3EB1;
+}
+
 .AboutPage-main {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    background-color: rgb(211, 183, 239);
+    color: var(--accent);
+    background-color: white;
 }
 
-.learn-about-me-btn {
-    border-style: solid;
-}
-
-.content {
+.AboutPage-main .content {
     width: 100%;
     margin-top: 15vh;
-    margin-inline: 5vh;
+    margin-inline: 15%;
     margin-bottom: 5vh;
     display: flex;
-    border-style: solid;
+    border-style: none;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: start;
     align-items: center;
+}
+
+.brand-div {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    column-gap: 5%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.AboutPage-main h1{
+    text-shadow: 2px 2px black;
+    font-size: 6vh;
+}
+
+.brand-div h2 {
+    font-size: 4.5vh;
+    text-align: center;
+    color: black;
+}
+
+.brand-div img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    box-shadow: 5px 10px var(--accent);
+}
+
+.brand-div img:hover {
+    scale: 108%;
+}
+
+.brand-div div {
+    display: flex;
+}
+
+.underline {
+    height: 5px;
+    width: 100px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

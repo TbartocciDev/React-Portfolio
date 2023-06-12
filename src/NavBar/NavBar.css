@@ -5,14 +5,37 @@
     display: flex;
     width: 100%;
     align-items: end;
-    background-color: rebeccapurple;
+    background-color: white;
+}
+
+.NavBar-main h2 {
+    font-size: 3.5vh;
 }
 
 .NavBar-main div {
     margin-left: auto;
 }
+
 .NavBar-hamburger-view {
     display: none;
+}
+
+.NavBar-main button {
+    border-style: none;
+    background-color: transparent;
+}
+
+.NavBar-main button :hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(right, #de2cc6, black, #40a7e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links-div button :hover {
+    scale: 107%;
+    cursor: pointer;
+    color: rgb(66, 66, 66);
 }
 
 /* Mobile Dev */

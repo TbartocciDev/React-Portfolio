@@ -1,12 +1,10 @@
 .SkillsPage-main {
     min-height: 100vh;
     display: flex;
-    background-color: #add8e6;
+    background-color: #41B6E6;
     color: rgb(91, 91, 91);
 }
-.SkillsPage-main h1 {
-    padding-top: 4vh;
-}
+
 .SkillsPage-main h2 {
     padding-top: 2vh;
 }
