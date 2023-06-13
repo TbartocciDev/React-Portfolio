@@ -29,9 +29,9 @@ function App() {
       <NavBar />
       <HomePage data={Data.home}/>
       <AboutPage data={Data.about}/>
-      <AppsPage />
+      <AppsPage data={Data.apps}/>
       <SkillsPage data={Data.skills}/>
-      <ContactPage />
+      <ContactPage data={Data.contact}/>
       <Footer />
     </div>
   );

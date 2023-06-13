@@ -1,5 +1,7 @@
 const iconColor = "ffffff"
 const iconSize = 128
+const contactLinkColor = "ffffff"
+const contactLinkSize = 128
 const Data = {
     home: {
         title: "Tommy Bartocci",
@@ -17,7 +19,7 @@ const Data = {
         ground up, or enhancing already built projects.`
     },
     apps: {
-
+        header: "Applications"
     },
     skills: {
         header: "Skills & Tools",
@@ -38,7 +40,32 @@ const Data = {
         ]
     },
     contact: {
-
+        header: "Contact",
+        subheader: "Let's get in touch!",
+        salutations: `Thank you for checking out my site. I hope to get the opportunity to build something amazing together!
+        Or are you feeling social? Feel free to reach out through the links below and let's chat.`,
+        contactLinks: [
+            {
+                title: "LinkedIn",
+                photoURL: "https://icongr.am/material/linkedin.svg?size="+contactLinkSize+"&color="+contactLinkColor,
+                link: "https://www.linkedin.com/in/thomas-bartocci-884957162"
+            },
+            {
+                title: "Github",
+                photoURL: "https://icongr.am/material/github.svg?size="+contactLinkSize+"&color="+contactLinkColor,
+                link: "https://github.com/TbartocciDev"
+            },
+            {
+                title: "View Resume",
+                photoURL: "https://icongr.am/material/pdf-box.svg?size="+contactLinkSize+"&color="+contactLinkColor,
+                link: "https://drive.google.com/file/d/1GX8n5eQKGboTRypYrEGAp5It0A7L9CEE/view?usp=sharing"
+            },
+            {
+                title: "Email Me!",
+                photoURL: "https://icongr.am/material/email-outline.svg?size="+contactLinkSize+"&color="+contactLinkColor,
+                link: ""
+            }
+        ]
     },
 }
 

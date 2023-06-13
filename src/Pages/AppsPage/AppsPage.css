@@ -1,5 +1,21 @@
 .AppsPage-main {
     height: 100vh;
     display: flex;
-    background-color: #DB3EB1;
+    background-color: #d30d0d;
+}
+
+.AppsPage-main .content {
+    width: 100%;
+    margin-top: 15vh;
+    margin-inline: 15%;
+    margin-bottom: 5vh;
+    display: flex;
+    border-style: none;
+    justify-content: start;
+}
+
+.AppsPage-main h1{
+    text-shadow: 2px 2px black;
+    font-size: 6vh;
+    color: white;
 }
