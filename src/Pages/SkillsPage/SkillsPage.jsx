@@ -7,10 +7,9 @@ export default function SkillsPage({ data }) {
             <div className="content">
                 <h1>{data.header}</h1>
                 <h2>{data.subheader}</h2>
-                <div className="section-header"></div>
-                <div className="section-subheader"></div>
+                <div className="underline"></div>
                 <div className="skills-div">
-                    {data.list.map((s, key) => (
+                    {data.originalList.map((s, key) => (
                         <SkillsCard skill={s} key={key}/>
                     ))}
                 </div>

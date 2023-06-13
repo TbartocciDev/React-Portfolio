@@ -1,22 +1,34 @@
-const iconColor = "ffffff"
+const iconColor = "d30d0d"
 const iconSize = 128
 const contactLinkColor = "ffffff"
 const contactLinkSize = 128
+const trelloColor = "325df9"
+const expressColor = "000000"
 const Data = {
     home: {
         title: "Tommy Bartocci",
         intro: "Is a NJ/NY based devloper who",
         possibleIntros: [
-            "is an animal lover",
-            "is a big star wars fan",
-            "loves the great outdoors"
+            {string: "is an animal lover", emoji:"🐿"},
+            {string: "is a big Star Wars nerd", emoji:"🔭"},
+            {string: "loves the great outdoors", emoji:"🏔"},
+            {string: "admires architecture", emoji:"🕌"},
+            {string: "tries new foods", emoji:"🧆"},
+            {string: "draws/designs", emoji:"🎨"},
+            {string: "is a sports fanatic", emoji:"⚽️🏈🏀"},
+            {string: "craves to adventure", emoji:"🛣️"},
+            {string: "reads often", emoji:"📚"},
+            {string: "cherishes family", emoji:"👨‍👩‍👧‍👦"},
         ]
     },
     about: {
         header: "About Me",
-        brandStatement: `Software Developer with school and self-taught education. Skilled in both iOS and web development. 
-        Possess exceptional problem-solving skills and industry standard programming knowledge. Capable of building from the 
-        ground up, or enhancing already built projects.`
+        subheader: "Who is Tommy?",
+        summary: `Developing applications is something that truly fascinates me on a daily basis, each task is like solving a piece to a puzzle.
+        I love learning about new technologies and concepts along the way as well.`,
+        background: `I believe my background helped shape me for this type of industry. I grew up in two different worlds: One with creative freedom that my family provided me,
+        and one with discipline and work ethic the world of sports provided me.`,
+        finalWords: "I Hope you enjoy my site and if you have any comments or suggestions, reach out!"
     },
     apps: {
         header: "Applications"
@@ -37,11 +49,25 @@ const Data = {
             {name: "Heroku", iconURL:"https://icongr.am/devicon/heroku-plain.svg?size="+iconSize+"&color="+iconColor},
             {name: "MongoDB", iconURL:"https://icongr.am/devicon/mongodb-plain.svg?size="+iconSize+"&color="+iconColor},
             {name: "Trello", iconURL:"https://icongr.am/devicon/trello-plain.svg?size="+iconSize+"&color="+iconColor},
+        ],
+        originalList: [
+            {name: "Swift", iconURL:"https://icongr.am/devicon/swift-original.svg?size=128&color=currentColor"},
+            {name: "React", iconURL:"https://icongr.am/devicon/react-original.svg?size=128&color=currentColor"},
+            {name: "JavaScript", iconURL:"https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"},
+            {name: "Python", iconURL:"https://icongr.am/devicon/python-original.svg?size=128&color=currentColor"},
+            {name: "HTML", iconURL:"https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor"},
+            {name: "CSS", iconURL:"https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"},
+            {name: "Django", iconURL:"https://icongr.am/devicon/django-original.svg?size=128&color=currentColor"},
+            {name: "Express", iconURL:"https://icongr.am/devicon/express-original.svg?size="+iconSize+"&color="+expressColor},
+            {name: "Trello", iconURL:"https://icongr.am/devicon/trello-plain.svg?size="+iconSize+"&color="+trelloColor},
+            {name: "Git", iconURL:"https://icongr.am/devicon/git-original.svg?size=128&color=currentColor"},
+            {name: "Heroku", iconURL:"https://icongr.am/devicon/heroku-original.svg?size=128&color=currentColor"},
+            {name: "MongoDB", iconURL:"https://icongr.am/devicon/mongodb-original.svg?size=128&color=currentColor"},
         ]
     },
     contact: {
         header: "Contact",
-        subheader: "Let's get in touch!",
+        subheader: "Want to get in touch? Feel free to contact me",
         salutations: `Thank you for checking out my site. I hope to get the opportunity to build something amazing together!
         Or are you feeling social? Feel free to reach out through the links below and let's chat.`,
         contactLinks: [

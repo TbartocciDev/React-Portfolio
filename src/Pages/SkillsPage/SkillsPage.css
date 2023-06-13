@@ -1,21 +1,29 @@
 .SkillsPage-main {
     min-height: 100vh;
     display: flex;
-    background-color: #41B6E6;
+    background-color: #ffffff;
     color: rgb(91, 91, 91);
 }
 
 .SkillsPage-main h2 {
     padding-top: 2vh;
 }
+
 .SkillsPage-main .content {
+    margin-inline: 10%;
     display: flex;
     justify-content: start;
     flex-direction: column;
     border-style: none;
     text-align: left;
-    align-items: start;
-    /* border-style: solid; */
+    /* align-items: start; */
+    align-items: center;
+}
+
+.SkillsPage-main h1{
+    text-shadow: 2px 2px black;
+    font-size: 6vh;
+    color: #d81010;
 }
 
 .skills-div {

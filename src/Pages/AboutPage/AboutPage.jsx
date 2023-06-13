@@ -9,8 +9,12 @@ export default function AboutPage({ data }) {
                 <div className="brand-div">
                     <div>
                         <img src="/2023-faceshot.png" alt="" />
-                    </div>                    
-                    <h2>{data.brandStatement}</h2>
+                    </div>
+                    <div className="comments-div">
+                        <h2>{data.summary}</h2>
+                        <h2>{data.background}</h2>
+                        <h2>{data.finalWords}</h2>
+                    </div>
                 </div>
             </div>
         </main>

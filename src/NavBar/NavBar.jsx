@@ -19,7 +19,7 @@ export default function NavBar() {
     }
 
     return (
-        <main className="NavBar-main">
+        <main className="NavBar-main" id="NavBar-colored" >
             <button
                 onClick={scrollToTop}
             ><h1>Tommy Bartocci</h1>

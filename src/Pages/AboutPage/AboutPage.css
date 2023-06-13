@@ -35,6 +35,13 @@
     text-shadow: 2px 2px black;
     font-size: 6vh;
 }
+.AboutPage-main h2{
+    /* text-shadow: 2px 2px black; */
+    font-size: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: black;
+}
 
 .brand-div h2 {
     font-size: 4.5vh;
@@ -58,6 +65,15 @@
 
 .brand-div div {
     display: flex;
+}
+
+.comments-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-div h2 {
+    font-size: 3.25vh;
 }
 
 .underline {

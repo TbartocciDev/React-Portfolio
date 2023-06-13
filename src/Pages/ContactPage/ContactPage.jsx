@@ -6,8 +6,9 @@ export default function ContactPage({ data }) {
         <main className="ContactPage-main" id="Contact">
             <div className="content">
                 <h1>{data.header}</h1>
+                <h2>{data.subheader}</h2>
                 <div className="underline"></div>
-                <h2>{data.salutations}</h2>
+                <h3>{data.salutations}</h3>
                 <div className="contact-links-div">
                     {data.contactLinks.map((link) => (
                         <ContactLink link={link}/>

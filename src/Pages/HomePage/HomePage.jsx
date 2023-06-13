@@ -5,10 +5,13 @@ export default function HomePage({ data }) {
         <main className="HomePage-main" id="Home">
             <div className="content">
                 <div className="intro-bio">
-                    <h2>{data.intro}</h2>
-                    <h2 className="changing-label">{data.possibleIntros[0]}</h2>
+                    <h1>{data.intro}</h1>
+                    <div id="rotating-text" className="text-holder">
+                        {data.possibleIntros.map((i) => (
+                            <h1>{i.string} {i.emoji}</h1>
+                        ))}
+                    </div>
                 </div>
-                {/* <button className="learn-about-me-btn">Learn more about me!</button> */}
             </div>
         </main>
     )
