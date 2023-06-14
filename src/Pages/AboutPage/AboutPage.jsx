@@ -1,6 +1,16 @@
 import "./AboutPage.css"
 
 export default function AboutPage({ data }) {
+    function handlePictureClicked(evt) {
+        evt.target.setAttribute('id', 'funny')
+        setTimeout(changeImage, 2500)
+    }
+
+    function changeImage() {
+        const img = document.querySelector('.facial')
+        img.setAttribute('id', 'normal')
+    }
+
     return (
         <main className="AboutPage-main" id="About">
             <div className="content">
@@ -8,7 +18,7 @@ export default function AboutPage({ data }) {
                 <div className="underline"></div>
                 <div className="brand-div">
                     <div>
-                        <img src="/2023-faceshot.png" alt="" />
+                        <img src="" alt="" onClick={handlePictureClicked} className="facial" id="normal"/>
                     </div>
                     <div className="comments-div">
                         <h2>{data.summary}</h2>

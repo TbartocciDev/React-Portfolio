@@ -6,7 +6,10 @@
     min-height: 100vh;
     display: flex;
     color: var(--accent);
-    background-color: white;
+    /* background-color: white; */
+    background-image: url("/public/white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .AboutPage-main .content {
@@ -45,6 +48,8 @@
 
 .brand-div h2 {
     font-size: 4.5vh;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
     text-align: center;
     color: black;
 }
@@ -57,9 +62,21 @@
     border-color: black;
     border-width: 5px;
     box-shadow: 5px 10px var(--accent);
+    cursor: pointer;
 }
 
-.brand-div img:hover {
+#normal {
+    content: url("/public/straight.jpeg");
+}
+#normal:hover {
+    scale: 108%;
+    content: url("/public/smirk.jpeg");
+}
+
+#funny {
+    content: url("/public/funny.jpeg");
+}
+#funny:hover {
     scale: 108%;
 }
 
@@ -73,7 +90,7 @@
 }
 
 .comments-div h2 {
-    font-size: 3.25vh;
+    font-size: 3.5vh;
 }
 
 .underline {
