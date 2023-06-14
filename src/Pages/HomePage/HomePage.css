@@ -1,10 +1,10 @@
 .HomePage-main {
     height: 100vh;
     display: flex;
-    background-color: rgb(13, 151, 32);
-    /* background-image: url("/public/sc1.png");
+    /* background-color: rgb(13, 151, 32); */
+    background-image: url("/public/arches.jpg");
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 
 .content {
@@ -24,10 +24,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.633);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.633);
     width: 65%;
     height: 40%;
-    background-color: rgba(69, 69, 69, 0.6);
+    background-color: rgba(69, 69, 69, 0.714);
     border-radius: 5vh;
     color: white;
 }

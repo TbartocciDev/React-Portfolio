@@ -7,18 +7,18 @@ const expressColor = "000000"
 const Data = {
     home: {
         title: "Tommy Bartocci",
-        intro: "Is a NJ/NY based devloper who",
+        intro: "Is a NJ based devloper who...",
         possibleIntros: [
             {string: "is an animal lover", emoji:"🐿"},
             {string: "is a big Star Wars nerd", emoji:"🔭"},
             {string: "loves the great outdoors", emoji:"🏔"},
             {string: "admires architecture", emoji:"🕌"},
             {string: "tries new foods", emoji:"🧆"},
-            {string: "draws/designs", emoji:"🎨"},
+            {string: "loves music", emoji:"🎧"},
             {string: "is a sports fanatic", emoji:"⚽️🏈🏀"},
-            {string: "craves to adventure", emoji:"🛣️"},
+            {string: "craves adventure", emoji:"🛣️"},
             {string: "reads often", emoji:"📚"},
-            {string: "cherishes family", emoji:"👨‍👩‍👧‍👦"},
+            {string: "cherishes friends and family", emoji:"👨‍👩‍👧‍👦"},
         ]
     },
     about: {

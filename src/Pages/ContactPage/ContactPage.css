@@ -46,6 +46,9 @@
 .contact-link:hover {
     scale: 107%;
 }
+.contact-link:hover h2{
+    color: rgb(249, 251, 145);
+}
 .contact-link {
     margin-bottom: 2vh;
 }
