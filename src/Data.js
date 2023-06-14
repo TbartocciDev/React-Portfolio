@@ -7,7 +7,7 @@ const expressColor = "000000"
 const Data = {
     home: {
         title: "Tommy Bartocci",
-        intro: "Is a NJ based devloper who...",
+        intro: "I am a NJ based devloper who...",
         possibleIntros: [
             {string: "is an animal lover", emoji:"🐿"},
             {string: "is a big Star Wars nerd", emoji:"🔭"},

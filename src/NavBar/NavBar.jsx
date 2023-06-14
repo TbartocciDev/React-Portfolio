@@ -2,10 +2,25 @@ import "./NavBar.css"
 
 export default function NavBar() {
     const sections = ["About","Apps","Skills","Contact"]
+    const dropDownMenu = document.querySelector('.drop-down-menu')
 
     function showMenu(evt) {
-        const navBar = evt.target.parentNode
-        navBar.style.height = "100vh"
+        let menuState = dropDownMenu.getAttribute('id')
+        if (menuState === "hidden") {
+            if (dropDownMenu) {
+                dropDownMenu.removeAttribute('id')
+                dropDownMenu.setAttribute('id','visible')
+            } else {
+                // alert('not found')
+            }
+        } else {
+            if (dropDownMenu) {
+                dropDownMenu.removeAttribute('id')
+                dropDownMenu.setAttribute('id','hidden')
+            } else {
+                // alert('not found')
+            }
+        }
     }
 
     function scrollToSection(evt) {

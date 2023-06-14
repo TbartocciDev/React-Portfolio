@@ -1,10 +1,12 @@
 /* Web Dev */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
-    font-family: 'Roboto Condensed';
+    font-family: 'Inter';
 }
 .NavBar-main {
     position: fixed;
+    z-index: 1;
     height: 10vmin;
     display: flex;
     width: 100%;
@@ -26,7 +28,7 @@ body {
     transition: background-color 300ms linear;
 }
 .NavBar-main h1 {
-    font-family: 'Roboto Condensed';
+    font-family: 'Inter';
     font-size: 6vh;
     color: white;
     text-shadow: 2px 2px black;
@@ -34,7 +36,7 @@ body {
 }
 
 .NavBar-main h2 {
-    font-family: 'Roboto Condensed';
+    font-family: 'Inter';
     font-size: 3.5vh;
     color: white;
     text-shadow: 2px 2px black;
@@ -74,7 +76,9 @@ body {
     
     .NavBar-hamburger-view {
         display: flex;
-        background-color: red;
+        /* background-color: rgb(255, 255, 255); */
+        background-image: url(https://icongr.am/material/chevron-double-down.svg?size=128&color=ffffff);
+        background-size: cover;
         height: 10vh;
         aspect-ratio: 1/1;
     }
@@ -85,5 +89,45 @@ body {
 
     .NavBar-main {
         padding-top: 1vh;
+        overflow: auto;
+    }
+
+    .NavBar-main h1 {
+        font-size: 5vh;
+    }
+
+    .drop-down-menu {
+        position: fixed;
+        height: 20vh;
+        opacity: 0;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .menu-content {
+        padding-top: 9vh;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #hidden {
+        opacity: 0;
+    }
+    #visible {
+        opacity: 1;
+    }
+
+    .menu-content button:hover {
+        scale: 107%;
+        cursor: pointer;
+        color: rgb(249, 251, 145);
+    }
+    
+    .menu-content button {
+        border-style: none;
+        background-color: rgba(121, 118, 118, 0.714);
+        font-size: 2.5vh;
+        color: white;
+        text-shadow: 2px 2px black;
+        padding: 0.5vh;
     }
 }

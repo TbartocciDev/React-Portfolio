@@ -3,6 +3,7 @@ import './App.css';
 // import { useState } from 'react';
 // Components
 import NavBar from './NavBar/NavBar.jsx';
+import DropdownMenu from './NavBar/DropdownMenu';
 import HomePage from './Pages/HomePage/HomePage';
 import AboutPage from './Pages/AboutPage/AboutPage.jsx';
 import AppsPage from './Pages/AppsPage/AppsPage';
@@ -27,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <DropdownMenu />
       <HomePage data={Data.home}/>
       <AboutPage data={Data.about}/>
       <AppsPage data={Data.apps}/>
