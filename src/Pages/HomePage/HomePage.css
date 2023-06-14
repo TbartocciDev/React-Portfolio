@@ -39,6 +39,7 @@
     margin-top: 3vh;
     width: 100%;
 }
+
 #rotating-text h1 {
     position: absolute;
     font-size: 4vh;
@@ -105,5 +106,18 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+/* Mobile Dev */
+@media (max-width: 800px) {
+    .content {
+        width: 100%;
+        margin-inline: 0vh;
+    }
+
+    .intro-bio {
+        width: 85%;
+        height: 40%;
     }
 }

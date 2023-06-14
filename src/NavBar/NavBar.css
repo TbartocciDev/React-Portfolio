@@ -70,7 +70,7 @@ body {
         height: 10vh;
         display: flex;
         width: 100%;
-    }
+    } */
     
     .NavBar-hamburger-view {
         display: flex;
@@ -81,5 +81,9 @@ body {
 
     .links-div {
         display: none;
-    } */
+    }
+
+    .NavBar-main {
+        padding-top: 1vh;
+    }
 }

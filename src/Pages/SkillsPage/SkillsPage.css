@@ -19,7 +19,6 @@
     flex-direction: column;
     border-style: none;
     text-align: left;
-    /* align-items: start; */
     align-items: center;
 }
 
@@ -37,4 +36,14 @@
     height: 100%;
     gap: 2vh;
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    .skills-div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .SkillsPage-main h2 {
+        text-align: center;
+    }
 }
