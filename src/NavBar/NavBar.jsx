@@ -3,23 +3,30 @@ import "./NavBar.css"
 export default function NavBar() {
     const sections = ["About","Apps","Skills","Contact"]
     const dropDownMenu = document.querySelector('.drop-down-menu')
+    const hamburgerMenu = document.querySelector('.NavBar-hamburger-view')
 
     function showMenu(evt) {
-        let menuState = dropDownMenu.getAttribute('id')
-        if (menuState === "hidden") {
-            if (dropDownMenu) {
-                dropDownMenu.removeAttribute('id')
-                dropDownMenu.setAttribute('id','visible')
+        if (dropDownMenu){
+            let menuState = dropDownMenu.getAttribute('id')
+            if (menuState === "hidden") {
+                if (dropDownMenu) {
+                    hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/close-circle-outline.svg?size=128&color=ffffff')"
+                    dropDownMenu.removeAttribute('id')
+                    dropDownMenu.setAttribute('id','visible')
+                } else {
+                    // alert('not found')
+                }
             } else {
-                // alert('not found')
+                if (dropDownMenu) {
+                    hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
+                    dropDownMenu.removeAttribute('id')
+                    dropDownMenu.setAttribute('id','hidden')
+                } else {
+                    // alert('not found')
+                }
             }
         } else {
-            if (dropDownMenu) {
-                dropDownMenu.removeAttribute('id')
-                dropDownMenu.setAttribute('id','hidden')
-            } else {
-                // alert('not found')
-            }
+            // alert('no drop down menu')
         }
     }
 

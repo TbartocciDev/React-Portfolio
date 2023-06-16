@@ -1,6 +1,7 @@
 export default function DropdownMenu() {
     const sections = ["About","Apps","Skills","Contact"]
     const dropDownMenu = document.querySelector('.drop-down-menu')
+    const hamburgerMenu = document.querySelector('.NavBar-hamburger-view')
 
     function scrollToSection(evt) {
         const section = document.getElementById(evt.target.innerHTML);
@@ -8,8 +9,9 @@ export default function DropdownMenu() {
         if (dropDownMenu) {
             dropDownMenu.removeAttribute('id')
             dropDownMenu.setAttribute('id','hidden')
-        } else {
-            // alert('not found')
+            hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
+        }else {
+
         }
     }
 
