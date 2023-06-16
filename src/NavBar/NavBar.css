@@ -94,6 +94,8 @@ body {
 
     .NavBar-main h1 {
         font-size: 7.5vw;
+        margin-left: 5vw;
+        width: 100%;
     }
 
     .drop-down-menu {

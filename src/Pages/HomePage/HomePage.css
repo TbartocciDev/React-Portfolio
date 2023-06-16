@@ -120,4 +120,8 @@
         width: 85%;
         height: 40%;
     }
+
+    #rotating-text h1 {
+        font-size: 5.5vw;
+    }
 }

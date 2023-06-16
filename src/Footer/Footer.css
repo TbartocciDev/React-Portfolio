@@ -1,4 +1,7 @@
 .Footer-main {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 4%;
     height: 10vh;
     background-color: white;
     display: flex;
@@ -7,5 +10,7 @@
 }
 
 p {
+    width: 100%;
     color: rgb(95, 95, 95);
+    text-align: center;
 }
