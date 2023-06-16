@@ -3,5 +3,13 @@
 }
 
 .skill-card img {
-    width: 80%;
+    width: 70%;
+}
+
+
+@media (max-width: 800px) {
+    .skill-card h2 {
+        margin-bottom: 2vh;
+        padding: 0;
+    }
 }

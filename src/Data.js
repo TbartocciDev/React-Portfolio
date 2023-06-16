@@ -82,7 +82,7 @@ const Data = {
                 link: "https://github.com/TbartocciDev"
             },
             {
-                title: "View Resume",
+                title: "Resume",
                 photoURL: "https://icongr.am/material/pdf-box.svg?size="+contactLinkSize+"&color="+contactLinkColor,
                 link: "https://drive.google.com/file/d/1GX8n5eQKGboTRypYrEGAp5It0A7L9CEE/view?usp=sharing"
             },

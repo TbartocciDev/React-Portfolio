@@ -64,13 +64,16 @@
         margin-inline: 5%;
     }
     .contact-links-div {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .contact-link {
         display: flex;
         justify-content: center;
+        width: 100%;
         margin-bottom: 0vh;
-        /* border-style: solid; */
+    }
+    .contact-link img {
+        width: 100%;
     }
     .ContactPage-main h1{
         font-size: 8vw;
