@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.cd061d00.css",
-    "main.js": "/react-portfolio/static/js/main.c64886f7.js",
-    "static/js/787.1ed0c42c.chunk.js": "/react-portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/arches.jpg": "/react-portfolio/static/media/arches.97e69c0bf682dd6fd5b4.jpg",
-    "static/media/white.jpg": "/react-portfolio/static/media/white.d8c4f6afa555886af4f6.jpg",
-    "static/media/funny.jpeg": "/react-portfolio/static/media/funny.46d27797c2e9a67977ce.jpeg",
-    "static/media/straight.jpeg": "/react-portfolio/static/media/straight.498ce6b16356b23f8b11.jpeg",
-    "static/media/smirk.jpeg": "/react-portfolio/static/media/smirk.b5c984c7feb3e95f2b06.jpeg",
-    "index.html": "/react-portfolio/index.html",
-    "main.cd061d00.css.map": "/react-portfolio/static/css/main.cd061d00.css.map",
-    "main.c64886f7.js.map": "/react-portfolio/static/js/main.c64886f7.js.map",
-    "787.1ed0c42c.chunk.js.map": "/react-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/React-Portfolio/static/css/main.95083d29.css",
+    "main.js": "/React-Portfolio/static/js/main.66462b6e.js",
+    "static/js/787.1ed0c42c.chunk.js": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/arches.jpg": "/React-Portfolio/static/media/arches.97e69c0bf682dd6fd5b4.jpg",
+    "static/media/white.jpg": "/React-Portfolio/static/media/white.d8c4f6afa555886af4f6.jpg",
+    "static/media/funny.jpeg": "/React-Portfolio/static/media/funny.46d27797c2e9a67977ce.jpeg",
+    "static/media/straight.jpeg": "/React-Portfolio/static/media/straight.498ce6b16356b23f8b11.jpeg",
+    "static/media/smirk.jpeg": "/React-Portfolio/static/media/smirk.b5c984c7feb3e95f2b06.jpeg",
+    "index.html": "/React-Portfolio/index.html",
+    "main.95083d29.css.map": "/React-Portfolio/static/css/main.95083d29.css.map",
+    "main.66462b6e.js.map": "/React-Portfolio/static/js/main.66462b6e.js.map",
+    "787.1ed0c42c.chunk.js.map": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd061d00.css",
-    "static/js/main.c64886f7.js"
+    "static/css/main.95083d29.css",
+    "static/js/main.66462b6e.js"
   ]
 }
