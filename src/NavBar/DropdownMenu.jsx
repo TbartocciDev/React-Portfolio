@@ -1,18 +1,23 @@
+import { useEffect } from "react";
+
 export default function DropdownMenu() {
     const sections = ["About","Apps","Skills","Contact"]
-    const dropDownMenu = document.querySelector('.drop-down-menu')
-    const hamburgerMenu = document.querySelector('.NavBar-hamburger-view')
+    let dropDownMenu = null
+    let hamburgerMenu = null
+    useEffect(() => {
+        dropDownMenu = document.querySelector('.drop-down-menu')
+        hamburgerMenu = document.querySelector('.NavBar-hamburger-view')
+    },[])
+
+    
+    
 
     function scrollToSection(evt) {
         const section = document.getElementById(evt.target.innerHTML);
+        dropDownMenu.removeAttribute('id')
+        dropDownMenu.setAttribute('id','hidden')
+        hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
         section.scrollIntoView({behavior: 'smooth'});
-        if (dropDownMenu) {
-            dropDownMenu.removeAttribute('id')
-            dropDownMenu.setAttribute('id','hidden')
-            hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
-        }else {
-
-        }
     }
 
     return (

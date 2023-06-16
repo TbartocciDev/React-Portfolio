@@ -1,32 +1,27 @@
 import "./NavBar.css"
+import { useEffect } from "react"
 
 export default function NavBar() {
     const sections = ["About","Apps","Skills","Contact"]
-    const dropDownMenu = document.querySelector('.drop-down-menu')
-    const hamburgerMenu = document.querySelector('.NavBar-hamburger-view')
+    let dropDownMenu = null
+    let hamburgerMenu = null
+    let menuState = null
+    useEffect(() => {
+        dropDownMenu = document.querySelector('.drop-down-menu')
+        hamburgerMenu = document.querySelector('.NavBar-hamburger-view')
+        
+    },[])
 
     function showMenu(evt) {
-        if (dropDownMenu){
-            let menuState = dropDownMenu.getAttribute('id')
-            if (menuState === "hidden") {
-                if (dropDownMenu) {
-                    hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/close-circle-outline.svg?size=128&color=ffffff')"
-                    dropDownMenu.removeAttribute('id')
-                    dropDownMenu.setAttribute('id','visible')
-                } else {
-                    // alert('not found')
-                }
-            } else {
-                if (dropDownMenu) {
-                    hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
-                    dropDownMenu.removeAttribute('id')
-                    dropDownMenu.setAttribute('id','hidden')
-                } else {
-                    // alert('not found')
-                }
-            }
+        menuState = dropDownMenu.getAttribute('id')
+        if (menuState === "hidden") {
+            hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/close-circle-outline.svg?size=128&color=ffffff')"
+            dropDownMenu.removeAttribute('id')
+            dropDownMenu.setAttribute('id','visible')
         } else {
-            // alert('no drop down menu')
+            hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
+            dropDownMenu.removeAttribute('id')
+            dropDownMenu.setAttribute('id','hidden')
         }
     }
 
@@ -38,6 +33,9 @@ export default function NavBar() {
     function scrollToTop(evt) {
         const section = document.getElementById("Home");
         section.scrollIntoView({behavior: 'smooth'});
+        hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
+        dropDownMenu.removeAttribute('id')
+        dropDownMenu.setAttribute('id','hidden')
     }
 
     return (
@@ -56,8 +54,7 @@ export default function NavBar() {
                 ))}
             </div>
             <div className="NavBar-hamburger-view" 
-                onClick={showMenu}>
-                    
+                onClick={showMenu}>               
             </div>
         </main>
     )

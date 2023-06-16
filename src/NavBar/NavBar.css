@@ -82,6 +82,9 @@ body {
         height: 85%;
         aspect-ratio: 1/1;
     }
+    .NavBar-hamburger-view:hover {
+        scale: 107%;
+    }
 
     .links-div {
         display: none;
