@@ -38,6 +38,7 @@ export default function NavBar() {
         const section = document.getElementById("Home");
         section.scrollIntoView({behavior: 'smooth'});
         hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
+        blurScreen.style.height = "0vh"
         dropDownMenu.removeAttribute('id')
         dropDownMenu.setAttribute('id','hidden')
     }
