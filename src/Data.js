@@ -87,7 +87,7 @@ const Data = {
                 link: "https://drive.google.com/file/d/1GX8n5eQKGboTRypYrEGAp5It0A7L9CEE/view?usp=sharing"
             },
             {
-                title: "Email Me!",
+                title: "Email",
                 photoURL: "https://icongr.am/material/email-outline.svg?size="+contactLinkSize+"&color="+contactLinkColor,
                 link: ""
             }

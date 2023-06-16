@@ -6,20 +6,24 @@ export default function NavBar() {
     let dropDownMenu = null
     let hamburgerMenu = null
     let menuState = null
+    let blurScreen = null 
+
     useEffect(() => {
         dropDownMenu = document.querySelector('.drop-down-menu')
         hamburgerMenu = document.querySelector('.NavBar-hamburger-view')
-        
+        blurScreen = document.querySelector('.blur-screen')
     },[])
 
     function showMenu(evt) {
         menuState = dropDownMenu.getAttribute('id')
         if (menuState === "hidden") {
             hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/close-circle-outline.svg?size=128&color=ffffff')"
+            blurScreen.style.height = "100vh"
             dropDownMenu.removeAttribute('id')
             dropDownMenu.setAttribute('id','visible')
         } else {
             hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
+            blurScreen.style.height = "0vh"
             dropDownMenu.removeAttribute('id')
             dropDownMenu.setAttribute('id','hidden')
         }

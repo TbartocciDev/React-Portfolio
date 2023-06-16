@@ -1,7 +1,6 @@
 .HomePage-main {
     height: 100vh;
     display: flex;
-    /* background-color: rgb(13, 151, 32); */
     background-image: url("/public/arches.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,6 +110,9 @@
 
 /* Mobile Dev */
 @media (max-width: 800px) {
+    .HomePage-main {
+        /* background-image: url("/public/arcadia3.jpeg"); */
+    }
     .content {
         width: 100%;
         margin-inline: 0vh;

@@ -21,7 +21,7 @@ export default function DropdownMenu() {
     }
 
     return (
-        <div className="drop-down-menu">
+        <div className="drop-down-menu" id="hidden">
             <div className="menu-content">
                 {sections.map((s, key) => (
                     <button 
@@ -31,6 +31,7 @@ export default function DropdownMenu() {
                     ><h2>{s}</h2></button>
                 ))}
             </div>
+            <div className="blur-screen"></div>
         </div>
     )
 }

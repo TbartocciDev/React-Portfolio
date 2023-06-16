@@ -18,7 +18,7 @@ body {
 
 #NavBar-colored {
     background-color: rgb(60, 60, 60);
-    box-shadow: 0px 2px black;
+    /* box-shadow: 0px 2px black; */
     transition: background-color 300ms linear;
 }
 
@@ -62,14 +62,15 @@ body {
     color: rgb(249, 251, 145);
 }
 
-.links-div button :hover {
-    
+.drop-down-menu {
+    opacity: 0;
 }
 
 /* Mobile Dev */
 @media (max-width: 800px) {
     .NavBar-main {
         height: 8vh;
+        box-shadow: 0px 0px black;
     }
     
     .NavBar-hamburger-view {
@@ -94,22 +95,29 @@ body {
 
     .NavBar-main h1 {
         font-size: 7.5vw;
-        margin-left: 5vw;
+        margin-left: 8%;
         width: 100%;
     }
 
     .drop-down-menu {
         position: fixed;
-        height: 100vh;
+        height: 30vh;
+        /* width: 100vw; */
         margin-top: -25vh;
         opacity: 0;
         width: 100%;
-        background-color: rgba(17, 17, 17, 0.714);
+        background-color: rgb(60, 60, 60);
         z-index: 1;
+    }
+    .blur-screen {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        height: 0vh;
+        background-color: rgba(17, 17, 17, 0.714);
     }
     .menu-content {
         padding-top: 10vh;
-        /* margin-top: -25vh; */
         height: 20vh;
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -124,12 +132,10 @@ body {
         0% {
             opacity: 1;
             margin-top: 0vh;
-            /* height: 20vh; */
         }
         100% {
             opacity: 0;
             margin-top: -25vh;
-            /* height: 0vh; */
         }
     }
     #visible {
@@ -144,7 +150,7 @@ body {
         }
         100% {
             opacity: 1;
-            margin-top: 0vh;
+            margin-top: -1vh;
         }
     }
 
@@ -156,10 +162,14 @@ body {
     
     .menu-content button {
         border-style: none;
-        background-color: black;
-        font-size: 4vw;
+        background-color: rgb(60, 60, 60);
         color: white;
         text-shadow: 2px 2px black;
         padding: 0.5vh;
+        text-align: left;
+    }
+    .menu-content h2 {
+        margin-inline: 5%;
+        font-size: 3vw;
     }
 }
