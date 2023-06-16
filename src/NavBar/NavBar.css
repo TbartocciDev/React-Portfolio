@@ -68,15 +68,12 @@ body {
 
 /* Mobile Dev */
 @media (max-width: 800px) {
-    /* .NavBar-main {
-        height: 10vh;
-        display: flex;
-        width: 100%;
-    } */
+    .NavBar-main {
+        height: 8vh;
+    }
     
     .NavBar-hamburger-view {
         display: flex;
-        /* background-color: rgb(255, 255, 255); */
         background-image: url(https://icongr.am/material/menu.svg?size=128&color=ffffff);
         background-size: cover;
         height: 85%;
@@ -96,7 +93,7 @@ body {
     }
 
     .NavBar-main h1 {
-        font-size: 5vh;
+        font-size: 4vh;
     }
 
     .drop-down-menu {
@@ -109,7 +106,7 @@ body {
         z-index: 1;
     }
     .menu-content {
-        padding-top: 9vh;
+        padding-top: 10vh;
         /* margin-top: -25vh; */
         height: 20vh;
         display: grid;

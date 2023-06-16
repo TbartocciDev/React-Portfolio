@@ -41,6 +41,7 @@
 @media (max-width: 800px) {
     .skills-div {
         grid-template-columns: repeat(3, 1fr);
+        gap: 0vh;
     }
 
     .SkillsPage-main h2 {
