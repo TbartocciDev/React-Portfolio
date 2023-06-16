@@ -117,11 +117,14 @@
     }
 
     .intro-bio {
-        width: 85%;
-        height: 40%;
+        width: 90%;
+        height: 30%;
+    }
+    .intro-bio h1 {
+        font-size: 6vw;
     }
 
     #rotating-text h1 {
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 }

@@ -113,10 +113,16 @@
     }
 
     .brand-div img {
-        width: 60%;
+        width: 50%;
         box-shadow: 0px 10px var(--accent);
         margin: auto;
         margin-top: 1vh;
         margin-bottom: 3vh;
+    }
+    .AboutPage-main h1 {
+        font-size: 8vw;
+    }
+    .AboutPage-main h2 {
+        font-size: 4.5vw;
     }
 }

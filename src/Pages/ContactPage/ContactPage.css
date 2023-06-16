@@ -66,7 +66,23 @@
     .contact-links-div {
         grid-template-columns: repeat(2, 1fr);
     }
+    .contact-link {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0vh;
+        /* border-style: solid; */
+    }
+    .ContactPage-main h1{
+        font-size: 8vw;
+    }
+    .ContactPage-main h2{
+        font-size: 4.5vw;
+    }
     .ContactPage-main h3 {
-        font-size: 3vh;
+        font-size: 4vw;
+        margin-bottom: 4vh;
+    }
+    .contact-link h2 {
+        margin-bottom: 1.5vh;
     }
 }

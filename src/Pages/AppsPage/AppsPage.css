@@ -19,3 +19,9 @@
     font-size: 6vh;
     color: white;
 }
+
+@media (max-width: 800px) {
+    .AppsPage-main h1{
+        font-size: 8vw;
+    }
+}
