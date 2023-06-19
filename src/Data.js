@@ -1,9 +1,10 @@
-const iconColor = "d30d0d"
+const iconColor = "ffffff"
 const iconSize = 128
 const contactLinkColor = "ffffff"
 const contactLinkSize = 128
 const trelloColor = "325df9"
 const expressColor = "000000"
+
 const Data = {
     home: {
         title: "Tommy Bartocci",
@@ -31,7 +32,43 @@ const Data = {
         finalWords: "I Hope you enjoy my site and if you have any comments or suggestions, reach out!"
     },
     apps: {
-        header: "Applications"
+        header: "Applications",
+        subheader: "Some iOS and web apps that I'm proud of",
+        projects: [
+            {
+                title: "The encryptor",
+                summary: "An iOS app desgined to manually encrypt, and decrypt text using custom alphabets.",
+                githubLink: "",
+                liveLink: "",
+                technologies: [
+                    
+                ]
+            },
+            {
+                title: "Geographi",
+                summary: "An iOS game that involves the flags of each country, and the correct spelling.",
+                githubLink: "",
+                technologies: [
+                    
+                ]
+            },
+            {
+                title: "tommybartocci.com",
+                // summary: `Previously my website was hosted by squarespace becuase it was a quick fix to scale up something. 
+                // However, it didn't reflect my skills as a developer and it was very limited in actually design aspects. 
+                // The obvious next step for me was to build my own site from scratch and voila, here it is.`,
+                summary: "My own personal website. Designed and coded by me",
+                githubLink: "",
+                liveLink: "",
+                technologies: [
+                    {name: "React", iconURL:"https://icongr.am/material/react.svg?size="+iconSize+"&color="+iconColor},
+                    {name: "JavaScript", iconURL:"https://icongr.am/devicon/javascript-plain.svg?size="+iconSize+"&color="+iconColor},
+                    {name: "HTML", iconURL:"https://icongr.am/devicon/html5-plain.svg?size="+iconSize+"&color="+iconColor},
+                    {name: "CSS", iconURL:"https://icongr.am/devicon/css3-plain.svg?size="+iconSize+"&color="+iconColor},
+                    {name: "Git", iconURL:"https://icongr.am/devicon/git-plain.svg?size="+iconSize+"&color="+iconColor},
+                ]
+            },
+        ]
     },
     skills: {
         header: "Skills & Tools",

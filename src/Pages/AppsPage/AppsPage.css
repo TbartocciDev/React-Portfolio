@@ -1,5 +1,5 @@
 .AppsPage-main {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     background-color: #d30d0d;
 }
@@ -7,7 +7,7 @@
 .AppsPage-main .content {
     width: 100%;
     margin-top: 15vh;
-    margin-inline: 15%;
+    margin-inline: 10%;
     margin-bottom: 5vh;
     display: flex;
     border-style: none;
@@ -19,9 +19,24 @@
     font-size: 6vh;
     color: white;
 }
+.AppsPage-main h2 {
+    font-size: 2.5vh;
+    margin-top: 2vh;
+}
+
+.projects-div {
+    width: 90%;
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+}
 
 @media (max-width: 800px) {
     .AppsPage-main h1{
         font-size: 8vw;
+    }
+    .projects-div {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -7,6 +7,7 @@ import DropdownMenu from './NavBar/DropdownMenu';
 import HomePage from './Pages/HomePage/HomePage';
 import AboutPage from './Pages/AboutPage/AboutPage.jsx';
 import AppsPage from './Pages/AppsPage/AppsPage';
+import ProjectDetailPage from './Pages/AppsPage/ProjectDetailPage/ProjectDetailPage';
 import SkillsPage from './Pages/SkillsPage/SkillsPage.jsx';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import Footer from './Footer/Footer.jsx';
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+      <ProjectDetailPage />
       <NavBar />
       <DropdownMenu />
       <HomePage data={Data.home}/>

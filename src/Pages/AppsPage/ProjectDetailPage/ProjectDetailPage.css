@@ -1,0 +1,32 @@
+.project-detail-page {
+    position: fixed;
+    height: 100vh;
+    z-index: -2;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-detail-blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.714);
+}
+
+.project-detail-content {
+    position: absolute;
+    height: 80%;
+    width: 60%;
+    background-color: rgb(21, 46, 188);
+}
+
+#detail-hiddden {
+    opacity: 0;
+}
+
+#detail-visible {
+    opacity: 1;
+}

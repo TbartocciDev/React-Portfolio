@@ -1,7 +1,6 @@
 .SkillsPage-main {
     min-height: 100vh;
     display: flex;
-    /* background-color: #ffffff; */
     background-image: url("/public/white.jpg");
     background-size: cover;
     background-repeat: no-repeat;

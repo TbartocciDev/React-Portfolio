@@ -110,9 +110,6 @@
 
 /* Mobile Dev */
 @media (max-width: 800px) {
-    .HomePage-main {
-        /* background-image: url("/public/arcadia3.jpeg"); */
-    }
     .content {
         width: 100%;
         margin-inline: 0vh;

@@ -12,9 +12,6 @@ export default function DropdownMenu() {
         blurScreen = document.querySelector('.blur-screen')
     },[])
 
-    
-    
-
     function scrollToSection(evt) {
         const section = document.getElementById(evt.target.innerHTML);
         dropDownMenu.removeAttribute('id')
@@ -22,6 +19,13 @@ export default function DropdownMenu() {
         dropDownMenu.setAttribute('id','hidden')
         hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
         section.scrollIntoView({behavior: 'smooth'});
+    }
+
+    function clickOutsideMenu() {
+        dropDownMenu.removeAttribute('id')
+        blurScreen.style.height = "0vh"
+        dropDownMenu.setAttribute('id','hidden')
+        hamburgerMenu.style.backgroundImage = "url('https://icongr.am/material/menu.svg?size=128&color=ffffff')"
     }
 
     return (
@@ -35,7 +39,7 @@ export default function DropdownMenu() {
                     ><h2>{s}</h2></button>
                 ))}
             </div>
-            <div className="blur-screen"></div>
+            <div className="blur-screen" onClick={clickOutsideMenu}></div>
         </div>
     )
 }

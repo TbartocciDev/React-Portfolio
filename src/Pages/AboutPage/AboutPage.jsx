@@ -17,9 +17,7 @@ export default function AboutPage({ data }) {
                 <h1>{data.header}</h1>
                 <div className="underline"></div>
                 <div className="brand-div">
-                    <div>
-                        <img src="" alt="" onClick={handlePictureClicked} className="facial" id="normal"/>
-                    </div>
+                    <img src="" alt="" onClick={handlePictureClicked} className="facial" id="normal"/>
                     <div className="comments-div">
                         <h2>{data.summary}</h2>
                         <h2>{data.background}</h2>
